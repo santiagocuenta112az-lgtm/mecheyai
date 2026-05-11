@@ -1,12 +1,12 @@
 # mecheyai
 animatronic eye system with integrated cameras for recording, microphones, speakers, and a screen to receive and answer questions with AI
  materials:
- raspberry pi 5
- icepi 5 cooler
- nvme adapter
- ai hat+
- 2kg filament
- 2 raspberry pi camera module
+ -raspberry pi 5
+ -icepi 5 cooler
+ -nvme adapter
+ -ai hat+ 26 tops
+ -2kg filament
+ -2 raspberry pi camera module
  
 
 The project has a model taken from the internet, scaled and adapted so that it can be used correctly.
