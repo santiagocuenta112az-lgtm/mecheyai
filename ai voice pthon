@@ -1,0 +1,81 @@
+from openai import OpenAI
+import whisper
+import subprocess
+import os
+
+GROQ_API_KEY = "tu api key de goq"
+
+print("Cargando Whisper...")
+model = whisper.load_model("tiny")
+
+print("Habla ahora...")
+subprocess.run([
+    "arecord",
+    "-D", "plughw:2,0",
+    "-f", "cd",
+    "-d", "8",
+    "input.wav"
+])
+
+print("Transcribiendo...")
+
+resultado = model.transcribe(
+    "input.wav",
+    language="es"
+)
+
+texto = resultado["text"]
+
+print("\nTU:")
+print(texto)
+
+with open("resultado.txt", "w") as f:
+    f.write(texto)
+
+client = OpenAI(
+    api_key=GROQ_API_KEY,
+    base_url="https://api.groq.com/openai/v1"
+)
+
+print("\nFreddy pensando...\n")
+
+respuesta = client.chat.completions.create(
+    model="llama-3.1-8b-instant",
+    messages=[
+        {
+                        "role": "system",
+            "content": """
+(aqui tu prompt, luegoa ctualizare con el prompt final cuando lo tenga hgecho)
+rol
+
+objetivo
+
+formato
+
+restricciones
+
+Hablas español.
+"""
+        },
+        {
+            "role": "user",
+            "content": texto
+        }
+    ]
+)
+
+respuesta_freddy = respuesta.choices[0].message.content
+
+print("FREDDY:")
+print(respuesta_freddy)
+os.system(
+    f'echo "{respuesta_freddy}" | '
+    'python -m piper '
+    '--model /home/salvador/piper/es_ES-carlfm-x_low.onnx '
+    '--length-scale 1.4 '
+    '--output-raw | '
+    'aplay -r 22050 -f S16_LE -t raw -D plughw:AUDIO'
+)
+
+with open("respuesta.txt", "w") as f:
+    f.write(respuesta_freddy)
