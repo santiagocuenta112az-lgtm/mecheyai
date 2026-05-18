@@ -7,7 +7,8 @@ animatronic eye system with integrated cameras for recording, microphones, speak
  -ai hat+ 26 tops
  -2kg filament
  -2 raspberry pi camera module
- 
+
+ I'm using AI to improve my code and learn to program, as I don't have extensive programming knowledge.
 
 The project has a model taken from the internet, scaled and adapted so that it can be used correctly.
 
