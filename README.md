@@ -20,3 +20,4 @@ https://www.printables.com/model/1435865-46mm-animatronic-single-eye-four-servo-
 <img width="5184" height="3456" alt="IMG_4583" src="https://github.com/user-attachments/assets/9dada2b8-f101-47dc-8a24-4fbb11eed152" />
 <img width="5184" height="3456" alt="IMG_4584" src="https://github.com/user-attachments/assets/131d6b26-4496-40b8-99cb-706f85f3cdf7" />
 <img width="5184" height="3456" alt="IMG_4585" src="https://github.com/user-attachments/assets/04980267-27bd-4f83-a4de-10d37d12799d" />
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/1d4d6fdb-7083-45fe-832e-7c1e1a93a082" />
