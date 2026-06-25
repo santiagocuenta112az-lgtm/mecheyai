@@ -45,7 +45,7 @@ respuesta = client.chat.completions.create(
         {
                         "role": "system",
             "content": """
-(aqui tu prompt, luegoa ctualizare con el prompt final cuando lo tenga hgecho)
+(aqui tu prompt, luego actualizare con el prompt final cuando lo tenga hecho)
 rol
 
 objetivo
