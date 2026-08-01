@@ -1,10 +1,15 @@
 # mecheyai
-animatronic eye system with integrated cameras for recording, microphones, speakers, and a screen to receive and answer questions with AI
- materials:
+Hey superstar, this is the most interactive part of my system. I aim to answer students' questions and I'm trained with responses in the style of Carl Sagan and Neil D'Grasse Tyson.
+You can ask me something by pressing the listen button on my screen, then I will be able to listen to you for 5 seconds.
+Sometimes I have trouble hearing you, so speak very clearly :>
+ 
+  
+  wiring diagram
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/49c751a5-845c-4052-9f79-0a7db0851ee9" />
+  materials:
  -raspberry pi 5
  -icepi 5 cooler
  -nvme adapter
- -ai hat+ 26 tops
  -2kg filament
  -2 raspberry pi camera module
 
