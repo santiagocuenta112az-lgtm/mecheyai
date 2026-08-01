@@ -5,7 +5,9 @@ Sometimes I have trouble hearing you, so speak very clearly :>
  
   
   wiring diagram
+  
 <img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/49c751a5-845c-4052-9f79-0a7db0851ee9" />
+
   materials:
  -raspberry pi 5
  -icepi 5 cooler
